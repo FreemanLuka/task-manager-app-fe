@@ -1,0 +1,241 @@
+/* Home Page */
+.home-page {
+  padding: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.home-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 0.75rem;
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.home-hero-content h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.home-hero-content p {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.125rem;
+  opacity: 0.9;
+}
+
+.home-cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: white;
+  color: #667eea;
+  text-decoration: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.home-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Stats Section */
+.home-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.stat-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+/* Recent Tasks */
+.home-recent {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+}
+
+.home-recent h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+}
+
+.recent-tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.recent-task-item {
+  padding: 1rem;
+  background: var(--bg-light);
+  border-radius: 0.375rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.recent-task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.recent-task-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-dark);
+  flex: 1;
+}
+
+.recent-task-status {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.recent-task-status.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.recent-task-status.in-progress {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.recent-task-status.completed {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.recent-task-description {
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.recent-task-date {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+.home-view-all {
+  display: inline-block;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.home-view-all:hover {
+  color: #2563eb;
+}
+
+/* Quick Links */
+.home-quick-links {
+  margin-bottom: 2rem;
+}
+
+.home-quick-links h2 {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.quick-link-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: var(--text-dark);
+  transition: all 0.2s;
+}
+
+.quick-link-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+  transform: translateY(-4px);
+}
+
+.quick-link-icon {
+  font-size: 2rem;
+}
+
+.quick-link-text {
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .home-hero {
+    padding: 2rem 1rem;
+  }
+
+  .home-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .home-hero-content p {
+    font-size: 1rem;
+  }
+
+  .home-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .quick-links-grid {
+    grid-template-columns: 1fr;
+  }
+}

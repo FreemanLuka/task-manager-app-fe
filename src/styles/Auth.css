@@ -1,0 +1,89 @@
+/* Auth Pages - Login & Register */
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 60px);
+  padding: 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Username indicator styles */
+.username-indicator {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.username-available {
+  color: #16a34a; /* green */
+}
+.username-taken {
+  color: #dc2626; /* red */
+}
+.username-checking {
+  color: #f59e0b; /* amber */
+}
+
+.auth-container h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.75rem;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.875rem;
+  margin: 0 0 1.5rem 0;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.auth-form .form-group {
+  margin-bottom: 0;
+}
+
+.auth-form .btn {
+  margin-top: 0.5rem;
+}
+
+.auth-link {
+  text-align: center;
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin-top: 1.5rem;
+}
+
+.auth-link a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.auth-link a:hover {
+  text-decoration: underline;
+}
+
+/* Password requirements text */
+.password-requirements {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-top: 0.25rem;
+}
+.password-requirements strong {
+  color: var(--text-dark);
+}

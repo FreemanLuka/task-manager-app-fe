@@ -1,0 +1,33 @@
+/* Task Form Styles */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.task-form h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+  color: var(--text-dark);
+}
+
+.task-form .form-group {
+  margin-bottom: 0;
+}
+
+.task-form .form-row {
+  margin-bottom: 0;
+}
+
+.task-form .form-row .form-group {
+  margin-bottom: 0;
+}
+
+.task-form textarea {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 0.875rem;
+}
+
+.task-form .form-actions {
+  margin-top: 0.5rem;
+}
