@@ -27,8 +27,8 @@ export default function Home() {
         data = await getTasks()
       }
 
-      // Ensure tasks is an array before slicing
-      setTasks(Array.isArray(data) ? data.slice(0, 5) : [])
+      // Ensure tasks is an array — store full list and handle slicing only for recent view
+      setTasks(Array.isArray(data) ? data : [])
     } catch (err) {
       console.error('Error loading tasks:', err)
       setTasks([])
