@@ -3,7 +3,7 @@ import axios from 'axios'
 // Base URL for the API. During development set `VITE_API_URL` in `.env`.
 // In production this falls back to the deployed backend on Render.
 // Example (client/.env): VITE_API_URL=https://task-manager-app-jam5.onrender.com
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://task-manager-app-jam5.onrender.com'
+const API_BASE_URL = import.meta.env.VITE_API_URL // || 'https://task-manager-app-jam5.onrender.com'
 
 // Create a single axios instance used across the app.
 // This centralizes base URL, headers and auth token handling.
